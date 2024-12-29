@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "e55ba84e-7b5d-43e2-b6b8-5831cd45bea3",
+		"name": "Spring AI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32327161"
+	},
+	"item": [
+		{
+			"name": "Get Simple AI prompt with options",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/ask-ai-options?prompt=what is your name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"ask-ai-options"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "what is your name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Simple AI prompt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/ask-ai?prompt=what is your name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"ask-ai"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "what is your name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/generate-image?prompt=cute cat on a porch&quality=hd&n=3&width=256&height=256",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"generate-image"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "cute cat on a porch"
+						},
+						{
+							"key": "quality",
+							"value": "hd"
+						},
+						{
+							"key": "n",
+							"value": "3"
+						},
+						{
+							"key": "width",
+							"value": "256"
+						},
+						{
+							"key": "height",
+							"value": "256"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Recipe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/generate-image?prompt=cute cat on a porch&quality=hd&n=3&width=256&height=256",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"generate-image"
+					],
+					"query": [
+						{
+							"key": "prompt",
+							"value": "cute cat on a porch"
+						},
+						{
+							"key": "quality",
+							"value": "hd"
+						},
+						{
+							"key": "n",
+							"value": "3"
+						},
+						{
+							"key": "width",
+							"value": "256"
+						},
+						{
+							"key": "height",
+							"value": "256"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

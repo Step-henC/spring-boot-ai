@@ -1,4 +1,4 @@
-package com.ai.Generator.service;
+package com.ai.Generator.service.ChatService;
 
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.chat.model.ChatResponse;
