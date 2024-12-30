@@ -10,10 +10,19 @@ create and application.properties variable as the following and insert key after
 
   - `spring.ai.openai.api-key=your_key_here`
 
+  The line above causes GitHub to reject pushes to the repository to a false positive secret. Follow git link to allow. OpenAI will deactivate the api key. Create a new api key on OpenAI's website.
+
+  **But please add an API key, otherwise project will not build or run!**
+
 ## Maven 
 Ensure you have maven 3.5+ and Java 17 installed on your machine. Then run the following commands: 
   - `mvn install`
   - `mvn spring-boot:run`
+
+  To run a different environment profile for the sake of allowed origins, run following commands:
+  - `mvn clean install` Do not forget OpenAI API Key
+  - `cd target`
+  - `java -jar Generator-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod`
 
 
   # Explore Generator
